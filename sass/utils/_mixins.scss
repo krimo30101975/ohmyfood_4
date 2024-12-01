@@ -1,25 +1,26 @@
-/* mixin */
-@mixin widthHeight{
+/* mixin general */
+@mixin widthHeight {
     width: 100%;
     height: auto;
 }
-@mixin animLoad{
-    animation: transition 2s ease-in-out 0s forwards;
-}
-@mixin animloadEnfants_for{
-    animation: rotate-forward 2s linear infinite;
-}
-@mixin animLoadEnfants_bac{
-    animation: rotate-backward 2s linear infinite;
-}
-@mixin animflash{
-    animation: flash 1.5s linear infinite;
-}
-@mixin flexCenter{
+@mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@mixin linearGradient{
+@mixin linearGradient {
     background-image: linear-gradient($color-purple, $color-pink);
+}
+/* mixin loader */
+@mixin animLoad {
+    animation: transition 2s ease-in-out 0s forwards;
+}
+@mixin animloadEnfants_for {
+    animation: rotate-forward 2s linear infinite;
+}
+@mixin animLoadEnfants_bac {
+    animation: rotate-backward 2s linear infinite;
+}
+@mixin animflash {
+    animation: flash 1.5s linear infinite;
 }

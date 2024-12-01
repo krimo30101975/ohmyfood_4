@@ -30,11 +30,13 @@
 
 /* BUTTON COEUR PAGE ACCUEIL */
 .btn__ico {
+    position: absolute;
 	@include flexCenter;
     text-align: center;
     width: 22px;
-    height: 100%;
-	bottom: 30px;
+    height: 30px;
+	bottom: 17px;
+	right: 17px;
 	z-index: 5;
     .btn__label{
 		position: absolute;
@@ -142,7 +144,7 @@
 	position: relative;
 	text-align: center;
 	min-width: 186px;
-	padding: 15px 20px;
+	padding: 15px 40px;
 	border: 0px;
 	border-radius: 25px;
 	font-size: 16px;
@@ -150,6 +152,7 @@
 	color: $color-white;
 	background-image: linear-gradient($color-pink,$color-purple);
 	box-shadow: 0 4px 10px 0 $boxshadow-25;
+    cursor: pointer;
 	transition: 0.3s;
 	&:hover {
 		background-image: linear-gradient($color-pink-c,$color-purple-c);

@@ -4,7 +4,8 @@
 /* media quereis */
 /* boxshadow */
 /* color */
-/* mixin */
+/* mixin general */
+/* mixin loader */
 /*menu checked */
 .plat input {
   appearance: none;
@@ -32,13 +33,15 @@
 
 /* BUTTON COEUR PAGE ACCUEIL */
 .btn__ico {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 22px;
-  height: 100%;
-  bottom: 30px;
+  height: 30px;
+  bottom: 17px;
+  right: 17px;
   z-index: 5;
 }
 .btn__ico .btn__label {
@@ -147,7 +150,7 @@
   position: relative;
   text-align: center;
   min-width: 186px;
-  padding: 15px 20px;
+  padding: 15px 40px;
   border: 0px;
   border-radius: 25px;
   font-size: 16px;
@@ -155,6 +158,7 @@
   color: #ffffff;
   background-image: linear-gradient(#ff79da, #9356dc);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
   transition: 0.3s;
 }
 .btn__multicolor:hover {
@@ -162,9 +166,8 @@
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
 }
 
-/* animation page loading */
-@keyframes rotate-forward {
-  /* animation ring forward */
+/* LOADER animation composants loading */
+@keyframes rotate-forward { /* animation ring forward */
   0% {
     transform: rotate(0deg);
   }
@@ -172,8 +175,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes rotate-backward {
-  /* animation ring backward */
+@keyframes rotate-backward { /* animation ring backward */
   0% {
     transform: rotate(360deg);
   }
@@ -181,8 +183,7 @@
     transform: rotate(0deg);
   }
 }
-@keyframes flash {
-  /* animation texte */
+@keyframes flash { /* animation texte */
   0% {
     background-image: linear-gradient(#ff79da, #9356dc);
   }
@@ -193,8 +194,7 @@
     background-image: linear-gradient(#ff79da, #9356dc);
   }
 }
-@keyframes transition {
-  /* animation disparition loading */
+@keyframes transition { /* animation disparition loading */
   80% {
     opacity: 1;
   }
@@ -203,9 +203,8 @@
     display: none;
   }
 }
-/* animation apparition */
+/* MENU animation apparition */
 @keyframes apparition {
-  /* animation disparition loading */
   from {
     transform: scale(0);
     opacity: 0;
@@ -239,60 +238,21 @@
   animation: apparition 0.5s 1s ease-out forwards;
 }
 
-.scroll__scaleE {
-  opacity: 0;
-  transform: translateY(-80px);
-  animation: apparition 0.6s 1.3s ease-out forwards;
-}
-
-.scroll__scaleF {
-  opacity: 0;
-  transform: translateX(-80px);
-  animation: apparition 0.8s 1.3s ease-out forwards;
-}
-
-.scroll__scaleG {
-  opacity: 0;
-  transform: translateX(-80px);
-  animation: apparition 1s 1s ease-out forwards;
-}
-
-/* scroll speed */
-@keyframes scroll {
+/* MENU animation apparition */
+@keyframes apparition_1 {
   from {
-    transform: scale(0);
     opacity: 0;
+    scale: 0.5;
   }
   to {
-    transform: scale(1);
     opacity: 1;
+    scale: 1;
   }
 }
-.scroll__A {
-  opacity: 0;
-  transform: translateX(-30px);
-  animation: apparition 0.8s 0.5s ease-out forwards;
+.apparition__scale_1 {
+  animation: apparition_1 linear;
   animation-timeline: view();
-  animation-range-start: cover -10%;
-  animation-range-end: contain -5%;
-}
-
-.scroll__B {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: apparition 0.5s 1.5s ease-out forwards;
-  animation-timeline: view();
-  animation-range-start: cover -10%;
-  animation-range-end: contain 0.1%;
-}
-
-.scroll__C {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: apparition 0.8s 0.5s ease-out forwards;
-  animation-timeline: view();
-  animation-range-start: cover -10%;
-  animation-range-end: contain 10%;
+  animation-range: entry 0;
 }
 
 /* font */
@@ -402,7 +362,7 @@ section {
   border-left: 4px solid #F6F6F6;
   animation: rotate-backward 2s linear infinite;
 }
-.loader .loadEnfants .loader__txt {
+.loader .loadEnfants_txt {
   font-family: "Shrikhand", serif;
   font-style: italic;
   font-size: 20px;
@@ -595,7 +555,7 @@ section {
   height: auto;
   gap: 18px;
 }
-.restaurants .restaurant__part {
+.restaurants .restaurants__part {
   position: relative;
   display: flex;
   justify-content: center;
@@ -774,7 +734,7 @@ section {
   flex: 0 0 100%;
   padding: 15px;
   gap: 5px;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.25s linear;
 }
 .plat__txt {
   overflow: hidden;

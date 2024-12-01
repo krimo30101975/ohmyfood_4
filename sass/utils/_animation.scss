@@ -1,7 +1,6 @@
 
-/* animation page loading */
-@keyframes rotate-forward {
-    /* animation ring forward */
+/* LOADER animation composants loading */
+@keyframes rotate-forward {/* animation ring forward */
     0% {
         transform: rotate(0deg);
     }
@@ -9,8 +8,7 @@
         transform: rotate(360deg);
     }
 }
-@keyframes rotate-backward {
-    /* animation ring backward */
+@keyframes rotate-backward {/* animation ring backward */
     0% {
         transform: rotate(360deg);
     }
@@ -18,8 +16,7 @@
         transform: rotate(0deg);
     }
 }
-@keyframes flash {
-    /* animation texte */
+@keyframes flash {/* animation texte */
     0% {
         background-image: linear-gradient($color-pink,$color-purple);
     }
@@ -30,8 +27,7 @@
         background-image: linear-gradient($color-pink,$color-purple);
     }
 }
-@keyframes transition {
-    /* animation disparition loading */
+@keyframes transition {/* animation disparition loading */
     80% {
         opacity: 1;
     }
@@ -41,9 +37,8 @@
     }
 }
 
-/* animation apparition */
+/* MENU animation apparition */
 @keyframes apparition {
-/* animation disparition loading */
     from {
         transform: scale(0);
         opacity: 0;
@@ -73,54 +68,21 @@
     transform: translateX(-80px);
     animation: apparition 0.5s 1s ease-out forwards;
 }
-.scroll__scaleE {
-    opacity: 0;
-    transform: translateY(-80px);
-    animation: apparition 0.6s 1.3s ease-out forwards;
-}
-.scroll__scaleF {
-    opacity: 0;
-    transform: translateX(-80px);
-    animation: apparition 0.8s 1.3s ease-out forwards;
-}
-.scroll__scaleG {
-    opacity: 0;
-    transform: translateX(-80px);
-    animation: apparition 1s 1s ease-out forwards;
-}
-/* scroll speed */
-@keyframes scroll {
+
+/* MENU animation apparition */
+@keyframes apparition_1 {
     from {
-        transform: scale(0);
         opacity: 0;
+        scale: 0.5;
     }
     to {
-        transform: scale(1);
         opacity: 1;
+        scale: 1;
     }
 }
-.scroll__A {
-    opacity: 0;
-    transform: translateX(-30px);
-    animation: apparition 0.8s 0.5s ease-out forwards;
+.apparition__scale_1 {
+    animation: apparition_1 linear;
     animation-timeline: view();
-    animation-range-start: cover -10%;
-    animation-range-end: contain -5%;
-}
-.scroll__B {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: apparition 0.5s 1.5s ease-out forwards;
-    animation-timeline: view();
-    animation-range-start: cover -10%;
-    animation-range-end: contain 0.1%;
-}
-.scroll__C {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: apparition 0.8s 0.5s ease-out forwards;
-    animation-timeline: view();
-    animation-range-start: cover -10%;
-    animation-range-end: contain 10%;
+    animation-range: entry 0;
 }
  

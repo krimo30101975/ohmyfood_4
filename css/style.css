@@ -553,7 +553,7 @@ section {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  gap: 18px;
+  gap: 28px;
 }
 .restaurants .restaurant__part {
   position: relative;

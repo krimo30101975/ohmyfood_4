@@ -106,7 +106,7 @@
         @include widthHeight;
         gap: 18px;
     }
-    .restaurants__part {
+    .restaurant__part {
         position: relative;
         @include flexCenter;
         flex-grow: 1;

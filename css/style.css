@@ -555,7 +555,7 @@ section {
   height: auto;
   gap: 18px;
 }
-.restaurants .restaurants__part {
+.restaurants .restaurant__part {
   position: relative;
   display: flex;
   justify-content: center;

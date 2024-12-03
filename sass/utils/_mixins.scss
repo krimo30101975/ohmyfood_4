@@ -13,7 +13,7 @@
 }
 /* mixin loader */
 @mixin animLoad {
-    animation: transition 2s ease-in-out 0s forwards;
+    animation: transition_disparition 2s ease-in-out 0s forwards;
 }
 @mixin animloadEnfants_for {
     animation: rotate-forward 2s linear infinite;

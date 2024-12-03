@@ -2,7 +2,6 @@
 /* HEADER */
 .header {
     @include widthHeight;
-    z-index: 2;
 }
 .header__navtop {
     position: relative;
@@ -20,8 +19,7 @@
     width: auto;
     height: 50px;
     background-color: $color-grey;
-    box-shadow: 0 4px 4px 0 inset $boxshadow-25,
-    0 4px 4px 0 $boxshadow-25;
+    box-shadow: 0 4px 4px 0 inset $boxshadow-25;
     .header__navbottom--ico {
         font-size: 16px;
         color: $color-grey-dark;

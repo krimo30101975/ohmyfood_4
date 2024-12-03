@@ -73,7 +73,7 @@
   background-clip: text;
   background-image: linear-gradient(#9356dc, #ff79da);
   opacity: 0;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 .btn__ico .btn__label .btn__Plein:hover {
   opacity: 1;
@@ -129,7 +129,7 @@
   background-clip: text;
   background-image: linear-gradient(#9356dc, #ff79da);
   opacity: 0;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 .btn__ico--menu .btn__label .btn__Plein:hover {
   opacity: 1;

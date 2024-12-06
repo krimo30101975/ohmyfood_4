@@ -1,0 +1,7 @@
+/// Le lien vers votre repository GitHub ///
+
+	https://github.com/krimo30101975/ohmyfood_4/tree/main/ohmyfood_4
+
+///  Le lien de la version en ligne de votre site Internet ///
+
+	git page : https://krimo30101975.github.io/ohmyfood_4/

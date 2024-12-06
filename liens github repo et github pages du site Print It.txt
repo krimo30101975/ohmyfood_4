@@ -1,3 +1,7 @@
+/// mon pseudo GitHub ///
+
+	krimo30101975
+
 /// Le lien vers votre repository GitHub ///
 
 	https://github.com/krimo30101975/ohmyfood_4/tree/main/ohmyfood_4
